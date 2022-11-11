@@ -1,0 +1,27 @@
+baseUrl: 'https://www.baidu.com'
+browser:
+  #browser only support Chrome, Firefox, Edge
+  type: Chrome
+  #option only support ChromeOption, FirefoxOption, EdgeOption
+  options: ChromeOption
+  optionsContent:
+    - '--headless'
+    - '--disable-gpu'
+    - '--no-sandbox'
+    - '--ignore-certificate-errors'
+    - '--window-size=1920,1080'
+
+log_config:
+  #log config file path
+  log_config_file_path: './config/logging.conf'
+  #log output type,consolelog or filelog
+  log_output_type: 'filelog'
+
+page_data_path:
+  main: './data/main.yaml'
+  news: './data/news.yaml'
+
+page_test_data_path:
+  test_news: './data/test_news.yaml'
+
+screenshots_path: './reports/screenshots/'

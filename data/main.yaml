@@ -1,0 +1,121 @@
+news:
+  - caseName: goto_news_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: 0
+        locator:
+          by: xpath
+          locator: '//*[@id="s-top-left"]//*'
+          index: 0
+        action: click
+        after_exec_action:
+          switch_window: 1
+          sleep: 1
+          is_screenshot: 1
+          screenshot_name: main_news
+hao123:
+  - caseName: goto_hao123_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="s-top-left"]//*'
+          index: 1
+        action: click
+        after_exec_action:
+          switch_window: -1
+          is_screenshot: 1
+          screenshot_name: main_hao123
+map:
+  - caseName: goto_map_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="s-top-left"]//*'
+          index: 2
+        action: click
+        after_exec_action:
+          switch_window: -1
+          is_screenshot: 1
+          screenshot_name: main_map
+tieba:
+  - caseName: goto_tieba_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="s-top-left"]//*'
+          index: 3
+        action: click
+        after_exec_action:
+          switch_window: -1
+          is_screenshot: 1
+          screenshot_name: main_tieba
+videos:
+  - caseName: goto_videos_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="s-top-left"]//*'
+          index: 4
+        action: click
+        after_exec_action:
+          switch_window: -1
+          is_screenshot: 1
+          screenshot_name: main_videos
+images:
+  - caseName: goto_images_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="s-top-left"]//*'
+          index: 5
+        action: click
+        after_exec_action:
+          switch_window: -1
+          is_screenshot: 1
+          screenshot_name: main_images
+netdisk:
+  - caseName: goto_netdisk_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="s-top-left"]//*'
+          index: 6
+        action: click
+        after_exec_action:
+          switch_window: -1
+          is_screenshot: 1
+          screenshot_name: main_netdisk
+more:
+  - caseName: goto_more_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="s-top-left"]//*'
+          index: 7
+        action: click
+        after_exec_action:
+          switch_window: -1
+          is_screenshot: 1
+          screenshot_name: main_more

@@ -1,0 +1,35 @@
+Test_news:
+  allure:
+    epic: "百度网站pc端web测试项目"
+  setup_steps:
+    - '进入百度网站首页和新闻主界面'
+    - '测试用列初始化'
+  teardown_steps:
+    - '测试完成，删除打开的windows，仅仅保留百度网站主界面和新闻主界面'
+
+test_click_one_hot_new:
+  news_item: 'hot_news'
+  select_index_new_click:
+    - 1
+    - 2
+    - 15
+    - 8
+    - 12
+  allure:
+    feature: '新闻主界面测试'
+    story: '测试点击热点新闻场景'
+    steps:
+      - '1.在新闻主界面，选择一个热点新闻'
+test_click_one_local_new:
+  news_item: 'local_news'
+  select_index_new_click:
+    - 4
+    - 11
+    - 9
+    - 13
+    - 2
+  allure:
+    feature: '新闻主界面测试'
+    story: '测试点击本地新闻场景'
+    steps:
+      - '1.在新闻主界面，选择一个本地新闻'

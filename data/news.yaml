@@ -1,0 +1,354 @@
+hot_news:
+  - caseName: get_hot_news
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: 1
+        locator:
+          by: xpath
+          locator: '//*[@id="focus-top"]//a[contains(@href, "http")]'
+          index: '${index}'
+        action: click
+        after_exec_action:
+          switch_window: 2
+          sleep: 5
+          check_points:
+            - type: text_in_page
+              text: '${text}'
+              is_action_element: 1
+              element:
+                by: xpath
+                locator: '//*[@id="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"]'
+              timeout: 10
+          is_screenshot: 1
+          screenshot_name: news_hot_news
+local_news:
+  - caseName: get_local_news
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: 1
+        locator:
+          by: xpath
+          locator: '//*[@id="local_news"]//a[contains(@href, "http")]'
+          index: '${index}'
+        action: click
+        after_exec_action:
+          switch_window: 2
+          sleep: 5
+          check_points:
+            - type: text_in_page
+              text: '${text}'
+              is_action_element: 1
+              element:
+                by: xpath
+                locator: '//*[@id="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"]'
+              timeout: 10
+          is_screenshot: 1
+          screenshot_name: news_local_news
+guonei:
+  - caseName: get_guonei_news
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="guonei"]//a[contains(@href, "http")]'
+          index: '${index}'
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: news_guonei_news
+guoji:
+  - caseName: get_guoji_news
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="guojie"]//a[contains(@href, "http")]'
+          index: '${index}'
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: news_guoji_news
+sports:
+  - caseName: get_tiyu_news
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="tiyu"]//a[contains(@href, "http")]'
+          index: '${index}'
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: news_tiyu_news
+finance:
+  - caseName: get_guoji_news
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="caijing"]//a[contains(@href, "http")]'
+          index: '${index}'
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: news_caijing_news
+technology:
+  - caseName: get_technology_news
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="col-tech"]//a[contains(@href, "http")]'
+          index: '${index}'
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: news_technology_news
+army:
+  - caseName: get_junshi_news
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="junshi"]//a[contains(@href, "http")]'
+          index: '${index}'
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: news_junshi_news
+internet:
+  - caseName: get_hulianwang_news
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="hulianwang"]//a[contains(@href, "http")]'
+          index: '${index}'
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: news_hulianwang_news
+discovery:
+  - caseName: get_discovery_news
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="col-discovery"]//a[contains(@href, "http")]'
+          index: '${index}'
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: news_discovery_news
+lady:
+  - caseName: get_lady_news
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="col-lady"]//a[contains(@href, "http")]'
+          index: '${index}'
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: news_lady_news
+healthy:
+  - caseName: get_healthy_news
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="col-healthy"]//a[contains(@href, "http")]'
+          index: '${index}'
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: news_healthy_news
+picture:
+  - caseName: get_tupian_news
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="tupianxinwen"]//a[contains(@href, "http")]'
+          index: '${index}'
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: news_tupian_news
+
+wangye:
+  - caseName: goto_main_from_news_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="header-link-wrapper"]//li'
+          index: 0
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: goto_main_from_news_page
+
+tieba:
+  - caseName: goto_tieba_from_news_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="header-link-wrapper"]//li'
+          index: 2
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: goto_tieba_from_news_page
+zhidao:
+  - caseName: goto_zhidao_from_news_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="header-link-wrapper"]//li'
+          index: 3
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: goto_zhidao_from_news_page
+misic:
+  - caseName: goto_music_from_news_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="header-link-wrapper"]//li'
+          index: 4
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: goto_zhidao_from_news_page
+images:
+  - caseName: goto_images_from_news_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="header-link-wrapper"]//li'
+          index: 5
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: goto_images_from_news_page
+video:
+  - caseName: goto_video_from_news_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="header-link-wrapper"]//li'
+          index: 6
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: goto_video_from_news_page
+map:
+  - caseName: goto_map_from_news_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="header-link-wrapper"]//li'
+          index: 7
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: goto_map_from_news_page
+wenku:
+  - caseName: goto_wenku_from_news_page
+    steps:
+      - stepName: step1
+        before_exec_action:
+          switch_window: -1
+        locator:
+          by: xpath
+          locator: '//*[@id="header-link-wrapper"]//li'
+          index: 8
+        action: click
+        after_exec_action:
+          switch_window: -1
+          sleep: 5
+          is_screenshot: 1
+          screenshot_name: goto_wenku_from_news_page
