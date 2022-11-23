@@ -12,6 +12,7 @@ class Test_news:
         with allure.step(page_test_data['Test_news']['setup_steps'][0]):
             self.app = App().start()
             self.news = self.app.main().goto_news()
+            print("--------------------------------------------", page_test_data['Test_news']['allure']['epic'])
 
     def setup(self):
         with allure.step(page_test_data['Test_news']['setup_steps'][1]):

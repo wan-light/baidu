@@ -11,10 +11,7 @@ test_click_one_hot_new:
   news_item: 'hot_news'
   select_index_new_click:
     - 1
-    - 2
-    - 15
-    - 8
-    - 12
+    - 4
   allure:
     feature: '新闻主界面测试'
     story: '测试点击热点新闻场景'
@@ -24,10 +21,7 @@ test_click_one_local_new:
   news_item: 'local_news'
   select_index_new_click:
     - 4
-    - 11
-    - 9
-    - 13
-    - 2
+    - 7
   allure:
     feature: '新闻主界面测试'
     story: '测试点击本地新闻场景'

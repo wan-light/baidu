@@ -21,6 +21,7 @@ class BasePage:
     def screenshot(self, name):
         self._driver.get_screenshot_as_file(name)
 
+
     def allure_screenshot(self, filename, file_path):
         self.screenshot(file_path)
         with open(file_path, "rb") as f:

@@ -1,9 +1,9 @@
-baseUrl: 'https://www.baidu.com'
+baseUrl: temp_test_target_url
 browser:
   #browser only support Chrome, Firefox, Edge
-  type: Chrome
+  type: temp_browser_type
   #option only support ChromeOption, FirefoxOption, EdgeOption
-  options: ChromeOption
+  options: temp_browser_options_type
   optionsContent:
     - '--headless'
     - '--disable-gpu'

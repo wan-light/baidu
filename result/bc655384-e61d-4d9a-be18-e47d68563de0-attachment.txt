@@ -1,4 +1,0 @@
-[32mINFO    [0m root:wrapper.py:21 run finds
- args: 
-('xpath', '//*[@id="local_news"]//a[contains(@href, "http")]')
-{}

@@ -1,1 +1,0 @@
-{"total":2,"items":[{"uid":"98fd800328c5bb3496575b6601ada412","name":"cases.news","statistic":{"failed":2,"broken":0,"skipped":0,"passed":8,"unknown":0,"total":10}},{"uid":"9ddc06458b7584bde71958fea9f8909c","name":"test_main","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
